@@ -16,7 +16,7 @@ exports.ODA_WEBHOOK_SECRET = process.env.ODA_WEBHOOK_SECRET || 'l8SFIdXC9bHw6fVd
 exports.API_URL = 'https://graph.facebook.com';
 exports.ENDPOINT_API = 'messages';
 exports.VERIFY_TOKEN = process.env.VERIFY_TOKEN || 'tokenfaf'; 
-exports.ACCESS_TOKEN = process.env.ACCESS_TOKEN || 'EAASXdveDHD4BO0vWcW0XxmS7PLWcRT6dy69NbZCn91PoSKoJUsaDCRBF7OoGMKtJsTWILBcUZAOU1ZCdhzaoW1ie0kQQNVZCu8wi9kskIyzYUFhcXCezpoWTB85HmsNFZBdYPwKDcUVKryHebLZAHZASzqgHBnbGJxKtUon9E5iA4M7Jgeie0D2bZBv89nB6maFTdglkt2d6RbdCJu5CrhIZD';
+exports.ACCESS_TOKEN = process.env.ACCESS_TOKEN || 'EAASXdveDHD4BO10IPtIWZBsF3ovpWx4kakGLuTbZA7tRaKZAHxMo4oeGCwRExHm3IxNWn79AoiogzDoVjZARb36nMf9LmBCrprC0Jx1usIHJEYVtFtDA843JrXJ0VHeympDdbYIRVEDBefl2iom8t3OXZC324dE27l9Dm7Si63dtZBvZAOArwJoZCZA5eXi4I9YT7ZAFb8uOcna4mmfFX83fkZD';
 exports.API_VERSION = process.env.VERSION || 'v19.0';
 exports.PHONE_NUMBER_ID = process.env.PHONE_NUMBER_ID || '112470085110760';
 exports.LIST_TITLE_DEFAULT_LABEL = 'Selecionar um(a)';
@@ -24,7 +24,7 @@ exports.LIST_TITLE_DEFAULT_LABEL = 'Selecionar um(a)';
 // General Detail
 exports.port = process.env.port || 3000;
 //exports.FILES_URL = 'https://ea4a-191-255-17-15.ngrok-free.app'; //your app server url //Ngrok
-exports.FILES_URL = 'https://webhook-whats-app-code2-83dptd5tx-flavio-franzolims-projects.vercel.app'; //your app server url //Vercel
+exports.FILES_URL = 'https://webhook-whats-app-code2.vercel.app'; //your app server url //Vercel
 exports.LOG_LEVEL = 'info'
 
 

@@ -39,7 +39,7 @@ app.use(express.static(staticPath));
 
 app.get('/', (req, res) => res.send('Oracle Digital Assistant for WhatsApp app is running.'));
 
-app.get('/about', (req, res) => res.send('about'));
+app.get('/about', (req, res) => res.send('<h1>about 2</h1>'));
 
 // Endpoint for verifying the webhook
 app.get('/user/message', (req, res) => {
