@@ -24,7 +24,7 @@ exports.LIST_TITLE_DEFAULT_LABEL = 'Selecionar um(a)';
 // General Detail
 exports.port = process.env.port || 3000;
 //exports.FILES_URL = 'https://ea4a-191-255-17-15.ngrok-free.app'; //your app server url //Ngrok
-exports.FILES_URL = 'webhook-whats-app-code2-c48u53o73-flavio-franzolims-projects.vercel.app'; //your app server url //Vercel
+exports.FILES_URL = 'webhook-whats-app-code2.vercel.app'; //your app server url //Vercel
 exports.LOG_LEVEL = 'info'
 
 
