@@ -39,10 +39,11 @@ app.use(express.static(staticPath));
 
 app.get('/', (req, res) => res.send('Oracle Digital Assistant for WhatsApp app is running.'));
 
-app.get('/about', (req, res) => res.send('<h1>about 2</h1>'));
+app.get('/about', (req, res) => res.send('<h1>about 3</h1>'));
 
 // Endpoint for verifying the webhook
 app.get('/user/message', (req, res) => {
+    logger.info("estou em app.get /user/message faf 0110");
     try {
         logger.info('verifying the webhook from WhatsApp.');
         const mode = req.query['hub.mode'];
@@ -62,6 +63,7 @@ app.get('/user/message', (req, res) => {
 
 // Handle incoming messages from WhatsApp
 app.post('/user/message', async (req, res) => {
+    logger.info("estou em app.post /user/message faf 0100");
     try {
         logger.info('Received a message from WhatsApp, processing message before sending to ODA.');
         let response = await whatsApp._receive(req.body.entry);

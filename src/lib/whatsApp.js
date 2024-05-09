@@ -73,6 +73,10 @@ class WhatsApp {
         switch (message.type) {
           case 'text':
             odaMessage = self._createTextMessage(userId, contactName, message.text.body);
+            logger.info("estou em: src-lib-whatsApp.js faf 0010 case text");
+            logger.info(userId);
+            logger.info(contactName);
+            logger.info(message.text.body);            
             break;
       
           case 'interactive':
@@ -101,6 +105,8 @@ class WhatsApp {
     
           default:
             // Unsupported message type
+            logger.info("estou em: src-lib-whatsApp.js faf 0020 case default unsupported message type");
+            logger.info(odaMessage);            
             return odaMessage;
         }
         return odaMessage;

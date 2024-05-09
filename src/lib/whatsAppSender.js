@@ -72,6 +72,8 @@ class WhatsAppSender {
     */
     async _sendMessageToWhatsApp(message) {
         let self = this;
+        logger.info("estou em: async _sendMessageToWhatsApp(message) faf 1001");
+        logger.info(message);
         try {
             const config = {
                 method: 'post',
