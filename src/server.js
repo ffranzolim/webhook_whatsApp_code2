@@ -71,10 +71,13 @@ app.post('/user/message', async (req, res) => {
         if (response) {
             logger.info('faf 1011');
             if (response.length > 0) {
-                logger.info('faf 1012');
+                logger.info('faf 1012 e vou mostrar message');
+                logger.info(messge);
                 response.forEach(async message => {
-                    await webhook.send(message);
                     logger.info('faf 1013');
+                    logger.info(message);
+                    await webhook.send(message);
+                    logger.info('faf 1014');
                     logger.info('Message Sent successfully to ODA.');
                 })
             } else {
