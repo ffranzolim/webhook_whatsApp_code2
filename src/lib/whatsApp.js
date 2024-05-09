@@ -22,8 +22,13 @@ class WhatsApp {
     * @param {object} payload - WhatsApp Message Object
     */
     async _receive(payload) {
+        logger.info('faf 1003 estou em src-lib-whatsApp.js async _receive');
         let self = this;
         let response = await self._getWhatsAppMessages(payload);
+        logger.info('payload:');
+        logger.info(payload);
+        logger.info('response:');
+        logger.info(response);
         return response;
     }
 
@@ -50,7 +55,9 @@ class WhatsApp {
     
             for (const message of messages) {
               let odaMessage = await self._processMessage(message, userId, contactName);
+              logger.info('faf 1002 estou em src-lib-whatsApp.js apos _processMessage');
               if (odaMessage) {
+                logger.info('faf 1003 estou em src-lib-whatsApp.js dentro do if');
                 odaMessages.push(odaMessage); 
               }
             }
