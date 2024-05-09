@@ -10,7 +10,7 @@
 
 //faf
 exports.ODA_WEBHOOK_URL = process.env.ODA_WEBHOOK_URL || 'https://oda-3110b5afa8704606b646827cd009be56-da10.data.digitalassistant.oci.oraclecloud.com/connectors/v2/listeners/webhook/channels/1bd16f4d-2e70-437c-8d61-de81e91f2da4'; 
-exports.ODA_WEBHOOK_SECRET = process.env.ODA_WEBHOOK_SECRET || 'l8SFIdXC9bHw6fVdw4c40dFcg4lNWl8o'; 
+exports.ODA_WEBHOOK_SECRET = process.env.ODA_WEBHOOK_SECRET || 'xLnldLCk9Io1CfOjvPpVyeAGbzbp4Owy'; 
 
 // WhatsApp Details
 exports.API_URL = 'https://graph.facebook.com';
