@@ -71,8 +71,8 @@ app.post('/user/message', async (req, res) => {
         if (response) {
             logger.info('faf 1011');
             if (response.length > 0) {
-                logger.info('faf 1012 e vou mostrar message');
-                logger.info(messge);
+                logger.info('faf 1012 e nao vou mostrar message');
+                //logger.info(message);
                 response.forEach(async message => {
                     logger.info('faf 1013');
                     logger.info(message);
@@ -86,6 +86,7 @@ app.post('/user/message', async (req, res) => {
                 return res.status(400).send('Unsupported message type');  
             }
         }
+        logger.info('faf 1015 antes de res.sendStatus(200)');
         res.sendStatus(200);
     } catch (error) {
         logger.info('faf 1020 catch error');
