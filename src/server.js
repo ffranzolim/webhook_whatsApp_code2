@@ -67,20 +67,26 @@ app.post('/user/message', async (req, res) => {
     try {
         logger.info('Received a message from WhatsApp, processing message before sending to ODA.');
         let response = await whatsApp._receive(req.body.entry);
-        
+        logger.info('faf 1010 depois de _receive Received a ...');
         if (response) {
+            logger.info('faf 1011');
             if (response.length > 0) {
+                logger.info('faf 1012');
                 response.forEach(async message => {
                     await webhook.send(message);
+                    logger.info('faf 1013');
                     logger.info('Message Sent successfully to ODA.');
                 })
             } else {
+                logger.info('faf 1012b');
                 logger.error('Unsupported message type');
                 return res.status(400).send('Unsupported message type');  
             }
         }
         res.sendStatus(200);
     } catch (error) {
+        logger.info('faf 1020 catch error');
+        logger.info('faf 1021: ' + error);
       console.error(error);
       res.sendStatus(500);
     }
